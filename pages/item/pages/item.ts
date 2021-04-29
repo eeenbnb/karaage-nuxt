@@ -10,9 +10,14 @@ interface ItemParams{
 })
 export default class PagesItem extends Vue {
   itemId:string = ""
+  item:any = {};
 
   get getId() {
     return this.itemId;
+  };
+
+  get getAPIText() {
+    return this.item.body;
   };
 
   async asyncData(context:Context):Promise<any> {
@@ -20,6 +25,15 @@ export default class PagesItem extends Vue {
     return {
       itemId:(params as ItemParams).id
     }
+  }
+
+  async fetch(){
+    this.item = await fetch(`https://qiita.com/api/v2/items/${this.itemId}`)
+      .then(
+        res => {
+          return res.json()
+        },
+      )
   }
 
   head() {
