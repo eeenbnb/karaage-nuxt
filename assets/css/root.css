@@ -1,0 +1,26 @@
+:root {
+    --size-header: 50px;
+    --size-conteinerSize: 720px;
+    --size-sideItemSize: 240px;
+    --size-maxPcWidthSize: 1296px;
+    --size-cardBorder: 20px;
+    --size-itemDistanceMargin: 24px;
+    --size-itemInnerPadding: 24px;
+
+    --color-Background: #faeee7;
+    --color-Headline: #ff8ba7;
+    --color-Paragraph: #594a4e;
+    --color-Button: #faae2b;
+    --color-ButtonText: #33272a;
+    --color-Stroke: #33272a;
+    --color-Main: #fffffe;
+    --color-Highlight: #ff8ba7;
+    --color-Secondary: #ffc6c7;
+    --color-Tertiary: #c3f0ca;
+    --font-size-1: 5rem;
+    --font-size-2: 4.5rem;
+    --font-size-3: 4rem;
+    --font-size-4: 3.5rem;
+    --font-size-5: 3rem;
+    --font-size-6: 2.5rem;
+}
